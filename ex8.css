@@ -1,0 +1,104 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+header{
+    background: #fff;
+    padding: 10px 20px;
+    border-bottom: 1px solid #ddd;
+}
+nav ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 15px;
+}
+nav ul li{
+    display: inline;
+    cursor: pointer;
+}
+.epaper{
+    float: right;
+    color: blue;
+    text-decoration: none;
+}
+main{
+    display: flex;
+    margin: 20px;
+    gap: 20px;
+}
+.main-news{
+    flex: 2;
+    position: relative;
+}
+.main-news img{
+    width: 100%;
+    height: auto;
+}
+.news-content{
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 10px;
+}
+.sidebar{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.top-stories, .quick-bites{
+    background: #f8f9fa;
+    padding: 15px;
+    border-radius: 5px;
+}
+h3{
+    background: yellow;
+    padding: 5px;
+    margin: 0 -15px;
+    text-align: center;
+}
+
+ul{
+    list-style: none;
+    padding: 0;
+}
+ul li{
+    padding: 5px 0;
+    border-bottom: 1px solid #ddd;
+}
+.quick-bites h4{
+    margin-top: 10px;
+}
+.quick-bites p{
+    font-size: 14px;
+}
+.newsletter{
+    margin-top: 10px;
+}
+.newsletter input{
+    width: 80%;
+    padding: 8px;
+    border: 0px solid #ddd;
+    border-radius: 4px;
+    outline: none;
+    font-size: 14px;
+}
+.newsletter button{
+    background: blue;
+    color: white;
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+}
+.quick-bites a{
+    display: block;
+    text-align: right;
+    color: blue;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 5px;
+}

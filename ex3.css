@@ -1,15 +1,77 @@
-.img1 img{
-    border-radius: 8px;
-    object-fit: cover;
-    width: 500px;
-    height: 300px;
-    /* position: absolute; */
-    z-index: -1;
-    top: 0;
-    left: 0;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
 }
-.container{
+body{
     display: flex;
     justify-content: center;
-    
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f4f4f4;
+}
+.card{
+    width: 400px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+.image-container{
+    position: relative;
+}
+.image-container img{
+    width: 100%;
+    display: block;
+    border-radius: 12px;
+    padding: 5px;
+}
+.tag{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: transparent;
+    color: white;
+    padding: 5px 10px;
+    font-size: 12px;
+    border-radius: 5px;
+    text-decoration: none;
+    border: 2px solid white;
+    transition: transform 0.2s ease, color 0.3s ease;
+}
+.tag:hover{
+    background: blanchedalmond;
+    color: white;
+    transform: scale(1.1);
+}
+.content{
+    padding: 15px;
+}
+.author{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.author img{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.name{
+    font-weight: bold;
+}
+.date{
+    color: gray;
+    font-size: 12px;
+}
+.title{
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.description{
+    color: #555;
+    font-size: 14px;
 }

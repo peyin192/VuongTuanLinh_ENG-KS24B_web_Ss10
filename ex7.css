@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+.container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+.recent-news, .clubs-ranking {
+    width: 48%;
+}
+h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+.news-container {
+    display: flex;
+}
+.main-news {
+    width: 50%;
+    position: relative;
+}
+.main-news img {
+    width: 100%;
+    border-radius: 8px;
+}
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 10px;
+    border-radius: 0 0 8px 8px;
+}
+.news-list {
+    width: 50%;
+    padding-left: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.news-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.news-item img {
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+.more-btn {
+    background: #f5f5f5;
+    padding: 6px 14px;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: bold;
+    margin: 10px auto 0;
+    text-align: center;
+    justify-content: center;
+    width: fit-content;
+}
+.ranking-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.ranking-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background: #f5f5f5;
+    border-radius: 8px;
+}
+.ranking-item img {
+    width: 24px;
+    margin: 0 10px;
+}
+.stats {
+    display: flex;
+    gap: 15px;
+}
